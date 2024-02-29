@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Garbage Management System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="garbage.css">
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .main-content {
+            margin: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+            margin-top: 20px;
+        }
+    </style>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .main-content {
+            margin: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+         h2 {
+            color: #4a4a4a;
+        }
+        p {
+            color: #7a7a7a;
+            line-height: 1.5;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        ol {
+            counter-reset: section;
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        ol li::before {
+            content: counter(section) ".";
+            counter-increment: section;
+            color: #4a4a4a;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+        .benefits-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .benefits-item {
+            flex-basis: calc(30% - 20px);
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .benefits-item img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width: 768px) {
+            .benefits-list {
+                flex-direction: column;
+            }
+            .benefits-item {
+                flex-basis: 100%;
+                margin-bottom: 10px;
+            }
+        }
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+h1 span{
+    display: inline-block;
+    animation: animate 1s  ease-in-out;
+
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0%;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0px);
+}
+}
+h1 span:nth-child(1)
+{
+    animation-delay: 0.6s;
+}
+h1 span:nth-child(2)
+{
+    animation-delay: 1s;
+}
+h1 span:nth-child(3)
+{
+    animation-delay: 1.7s;
+}
+h1 span:nth-child(4)
+{
+    animation-delay: 2.3s;
+}
+h1 span:nth-child(5)
+{
+    animation-delay: 2.7s;
+}
+h1 span:nth-child(6)
+{
+    animation-delay: 3.2s;
+}
+h1 span:nth-child(7)
+{
+    animation-delay: 3.7s;
+}
+h1 span:nth-child(8)
+{
+    animation-delay: 4s;
+}
+    </style>
+    
+        </head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    <div class="header">
+        <section>
+           
+            <h1>
+                <span>W</span>
+                <span>e</span>
+                <span>l</span>
+                <span>c</span>
+                <span>o</span>
+                <span>m</span>
+                <span>e </span>
+                <span> </span>
+                <span>T </span>
+                <span>o  </span>
+                <span> </span>
+                <span>T</span>
+                <span>h</span>
+                <span>e </span>
+                <span> </span>
+                <span> G</span>
+                <span>a</span>
+                <span>r</span>
+                <span>b</span>
+                <span>a</span>
+                <span>g</span>
+                <span>e </span>
+                <span> </span>
+                <span>M</span>
+                <span>a</span>
+                <span>n</span>
+                <span>a</span>
+                <span>g</span>
+                <span>e</span>
+                <span>m</span>
+                <span>e</span>
+                <span>n</span>
+                <span>t </span>
+                <span> </span>
+                <span>S</span>
+                <span>y</span>
+                <span>e</span>
+                <span>s</span>
+                <span>t</span>
+                <span>e</span>
+                <span>m </span>
+            </h1>
+        </section>
+    </div>
+    <div class="main-content">
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>The Garbage Management System is a web-based platform that helps communities manage their waste disposal and recycling processes more efficiently. Our system enables users to:</p>
+            <ul>
+                <li>Schedule and track garbage pickups</li>
+                <li>Monitor recycling progress</li>
+                <li>Get notifications for special events or changes in service</li>
+            </ul>
+        </section>
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <p>Our system is designed to be user-friendly and intuitive. Here's a quick overview of how it works:</p>
+            <ol>
+                <li>Register for an account and create a profile for your community or household.</li>
+                <li>Schedule your regular garbage pickups and recycling events using our easy-to-use calendar interface.</li>
+                <li>Receive notifications about upcoming events, changes in service, and other important updates.</li>
+                <li>Monitor your community's recycling progress and see how much waste you're diverting from landfills.</li>
+            </ol>
+        </section>
+        <section id="benefits">
+            <h2>Benefits</h2>
+            <p>Our garbage management system offers numerous benefits for communities, including:</p>
+            <ul>
+                <li>Improved waste management and recycling rates</li>
+                <li>Reduced waste disposal costs</li>
+                <li>Increased community engagement and awareness</li>
+                <li>Streamlined communication and notifications</li>
+            </ul>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <p>Our system includes a range of features designed to make waste management and recycling easier and more efficient, such as:</p>
+            <ul>
+                <li>Customizable pickup schedules and recycling events</li>
+                <li>Automated notifications and reminders</li>
+                <li>Real-time tracking and reporting of recycling progress</li>
+                <li>Integrated waste disposal cost tracking and budgeting tools</li>
+                <li>Community forums and discussion boards</li>
+            </ul>
+        </section>
+    </div>
+    <div class="footer">
+        <p>Copyright © 2023 Garbage Management System</p>
+    </div>
+</body>
+
+</html>
